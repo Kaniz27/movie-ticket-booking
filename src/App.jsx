@@ -13,6 +13,8 @@ import Details from './Data/Details';
 import Movies  from './Pages/Movies';
 import Footer from './Components/Footer';
 import AllMovieDetails from './Pages/Hero/AllMovieDetails';
+import { Toaster } from 'react-hot-toast';
+
 
 
 export default function App() {
@@ -31,7 +33,7 @@ return () => unsub();
 return (
 <div>
 <Navbar user={user} onLogout={() => signOut(auth).then(() => navigate('/'))} />
-
+ <Toaster position="top-right" reverseOrder={false} />
 
 <Routes>
 <Route path="/" element={<Home />} />

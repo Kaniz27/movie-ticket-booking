@@ -1,6 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router"; 
+import { NavLink } from "react-router";
+import { FaSignInAlt } from "react-icons/fa"; // Login icon
+
 export function Navbar({ user, onLogout }) {
+  const navItems = ["Home", "Movies", "Releases", "Contact", "Bookings"];
+
   return (
     <header className="sticky top-0 z-40 bg-black border-b border-red-400">
       <div className="max-w-[1200px] mx-auto flex items-center justify-between px-5 py-3">
@@ -11,67 +15,58 @@ export function Navbar({ user, onLogout }) {
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden gap-12  md:flex ">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              `transition-colors ${isActive ? "text-red-600" : "text-gray-400"}`
-            }
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/movies"
-            className={({ isActive }) =>
-              `transition-colors ${isActive ? "text-red-600" : "text-gray-400"}`
-            }
-          >
-            Movies
-          </NavLink>
-          <NavLink
-            to="/releases"
-            className={({ isActive }) =>
-              `transition-colors ${isActive ? "text-red-600" : "text-gray-400"}`
-            }
-          >
-            Releases
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `transition-colors ${isActive ? "text-red-600" : "text-gray-400"}`
-            }
-          >
-            Contact
-          </NavLink>
-          <NavLink
-            to="/bookings"
-            className={({ isActive }) =>
-              `transition-colors ${isActive ? "text-red-600" : "text-gray-400"}`
-            }
-          >
-            Bookings
-          </NavLink>
+        <nav className="hidden gap-4 md:flex">
+          {navItems.map((item) => (
+            <NavLink
+              key={item}
+              to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+              className={({ isActive }) =>
+                `px-4 py-1 rounded-full font-medium cursor-pointer transition-all
+                bg-gradient-to-r from-[#200802] to-[#400401] 
+                text-white border-none
+                ${isActive ? "ring-2 ring-red-600" : "hover:from-[#400401] hover:to-[#600803]"}`
+              }
+            >
+              {item}
+            </NavLink>
+          ))}
         </nav>
 
         {/* Auth Area */}
         <div className="flex items-center gap-3">
           {user ? (
-            <>
-              <span className="text-gray-300">{user.email}</span>
+            <div className="flex items-center gap-2">
+              {/* Profile Image / Fallback */}
+              {user.photoURL ? (
+                <img
+                  src={user.photoURL}
+                  alt="Profile"
+                  className="w-8 h-8 rounded-full"
+                />
+              ) : (
+                <div className="w-8 h-8 rounded-full  bg-gradient-to-r from-[#200802] to-[#400401] 
+                hover:from-[#400401] hover:to-[#600803] flex items-center justify-center text-white font-semibold">
+                  {user.email[0].toUpperCase()}
+                </div>
+              )}
+              {/* Logout */}
               <button
-                className="bg-gray-800 hover:bg-gray-700 text-white px-3 py-1 rounded-md text-sm transition"
+                className="px-4 py-2 rounded-full text-white font-medium cursor-pointer 
+                bg-gradient-to-r from-[#200802] to-[#400401] 
+                hover:from-[#400401] hover:to-[#600803] transition-all"
                 onClick={onLogout}
               >
                 Logout
               </button>
-            </>
+            </div>
           ) : (
             <NavLink
               to="/login"
-              className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded-full text-sm transition"
+              className="flex items-center gap-2 px-4 py-2 rounded-full text-white font-medium cursor-pointer 
+                bg-gradient-to-r from-[#200802] to-[#400401] 
+                hover:from-[#400401] hover:to-[#600803] transition-all"
             >
-              Login
+              <FaSignInAlt /> Login
             </NavLink>
           )}
         </div>

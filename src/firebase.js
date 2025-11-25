@@ -1,5 +1,4 @@
- 
-
+// src/firebase.js
 import { initializeApp } from 'firebase/app';
 import {
   getAuth,
@@ -8,8 +7,8 @@ import {
   signOut,
   onAuthStateChanged,
 } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
-// Firebase Console থেকে এই config বসাও
 const firebaseConfig = {
   apiKey: "AIzaSyDFWirh2G0kZxCQp4zETPR8LIjATF3kIA4",
   authDomain: "project-66c0e.firebaseapp.com",
@@ -20,14 +19,13 @@ const firebaseConfig = {
   measurementId: "G-8KG91KT3GZ"
 };
 
-// Firebase অ্যাপ ইনিশিয়ালাইজেশন
 const app = initializeApp(firebaseConfig);
-
-// Authentication
 const auth = getAuth(app);
+const db = getFirestore(app);
 
 export {
   auth,
+  db,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,

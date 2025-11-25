@@ -72,8 +72,8 @@ const Footer = () => {
           <h3 className="text-red-600 text-lg font-semibold mb-4">Contact Us</h3>
 
           <div className="flex items-center gap-3 mb-4">
-            <FaEnvelope className="text-red-600" />
-            <span>contact@gmail.com</span>
+            <FaEnvelope className="text-red-600 " />
+            <span>kaniz@gmail.com</span>
           </div>
 
           <div className="flex items-center gap-3 mb-4">
