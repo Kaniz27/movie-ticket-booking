@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router"; 
 export function Navbar({ user, onLogout }) {
   return (
-    <header className="sticky top-0 z-40 bg-gradient-to-r from-black/85 via-black/60 to-black/60 border-b-[3px] border-red-600/5">
+    <header className="sticky top-0 z-40 bg-black border-b border-red-400">
       <div className="max-w-[1200px] mx-auto flex items-center justify-between px-5 py-3">
         {/* Logo */}
         <div className="flex items-center gap-2">

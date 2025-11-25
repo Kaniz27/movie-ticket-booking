@@ -31,8 +31,8 @@ return (
 
 
 <div className="hero-actions">
-<button className="btn primary" onClick={() => navigate('/movies')}>🎟️ Book Movies</button>
-<button className="btn outline" onClick={() => navigate('/contact')}>ℹ️ More Info</button>
+<button className="btn primary title" onClick={() => navigate('/movies')}>🎟️ Book Movies</button>
+<button className="btn outline title" onClick={() => navigate('/contact')}>ℹ️ More Info</button>
 </div>
 </div>
 </section>

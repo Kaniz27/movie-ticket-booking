@@ -2,6 +2,7 @@ import React from 'react';
 import { Hero } from './hero/Hero';
 import FeaturedMovies from '../Data/FeaturedMovies';
 import LatestTrailers from '../Trailer/LatestTrailers';
+import CineNews from './Hero/CineNews';
 
 
 
@@ -17,6 +18,7 @@ return (
     <LatestTrailers></LatestTrailers>
   
 </div>
+<CineNews></CineNews>
 </main>
 );
 }

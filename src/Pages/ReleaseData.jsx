@@ -1,14 +1,14 @@
 // src/data/releasesData.js
-import RP1 from "../assets/image/RP1.png"
-import RP2 from "../assets/image/RP1.png"
-import RP3 from "../assets/image/RP1.png"
-import RP4 from "../assets/image/RP1.png"
-import RP5 from "../assets/image/RP1.png"
-import RP6 from "../assets/image/RP1.png"
-import RP7 from "../assets/image/RP1.png"
-import RP8 from "../assets/image/RP1.png"
-import RP9 from "../assets/image/RP1.png"
-import RP10 from "../assets/image/RP1.png"
+import RP1 from "../../src/assets/image/RP1.png"
+import RP2 from "../../src/assets/image/RP4.png"
+import RP3 from "../../src/assets/image/RP6.png"
+import RP4 from "../../src/assets/image/RP4.png"
+import RP5 from "../../src/assets/image/RP5.png"
+import RP6 from "../../src/assets/image/RP6.png"
+import RP7 from "../../src/assets/image/RP7.png"
+import RP8 from "../../src/assets/image/RP8.png"
+import RP9 from "../../src/assets/image/RP9.png"
+import RP10 from "../../src/assets/image/RP10.png"
 
 
 

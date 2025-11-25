@@ -9,7 +9,7 @@ const LatestTrailers = () => {
       {/* Left side: Trending & Thumbnails */}
       <div className="md:w-1/3 bg-white rounded-lg shadow-lg p-4">
         <h2 className="font-bold text-lg mb-4 flex items-center gap-2">
-          <span>🎬</span> Latest Trailers
+          <span>🎬</span><span className="title font-bold text-2xl text-black"> Latest Trailers</span>
         </h2>
 
         {/* Thumbnail carousel */}
@@ -29,7 +29,7 @@ const LatestTrailers = () => {
 
         {/* Trending list */}
         <div>
-          <h3 className="font-semibold mb-2">Now Trending</h3>
+          <h3 className="title font-bold text-2xl text-black mb-2">Now Trending</h3>
           <ul>
             {trailersData.slice(0, 3).map((t) => (
               <li
@@ -40,11 +40,11 @@ const LatestTrailers = () => {
                 <img
                   src={t.thumbnail}
                   alt={t.title}
-                  className="w-10 h-10 object-cover rounded"
+                  className="w-16 h-16 object-cover rounded"
                 />
                 <div>
-                  <p className="font-semibold text-sm">{t.title}</p>
-                  <p className="text-xs text-gray-500">{t.genre}</p>
+                  <p className="font-semibold text-black text-xl title">{t.title}</p>
+                  <p className="text-xl text-gray-500 title">{t.genre}</p>
                 </div>
               </li>
             ))}

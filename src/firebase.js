@@ -1,31 +1,35 @@
+ 
+
 import { initializeApp } from 'firebase/app';
 import {
-getAuth,
-createUserWithEmailAndPassword,
-signInWithEmailAndPassword,
-signOut,
-onAuthStateChanged,
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
 } from 'firebase/auth';
 
-
+// Firebase Console থেকে এই config বসাও
 const firebaseConfig = {
-apiKey: 'REPLACE_WITH_YOUR_API_KEY',
-authDomain: 'REPLACE_WITH_YOUR_AUTH_DOMAIN',
-projectId: 'REPLACE_WITH_YOUR_PROJECT_ID',
-storageBucket: 'REPLACE_WITH_YOUR_STORAGE_BUCKET',
-messagingSenderId: 'REPLACE_WITH_YOUR_MESSAGING_SENDER_ID',
-appId: 'REPLACE_WITH_YOUR_APP_ID',
+  apiKey: "AIzaSyDFWirh2G0kZxCQp4zETPR8LIjATF3kIA4",
+  authDomain: "project-66c0e.firebaseapp.com",
+  projectId: "project-66c0e",
+  storageBucket: "project-66c0e.firebasestorage.app",
+  messagingSenderId: "668604044790",
+  appId: "1:668604044790:web:3b1b34a30e62031c5923d7",
+  measurementId: "G-8KG91KT3GZ"
 };
 
-
+// Firebase অ্যাপ ইনিশিয়ালাইজেশন
 const app = initializeApp(firebaseConfig);
+
+// Authentication
 const auth = getAuth(app);
 
-
 export {
-auth,
-createUserWithEmailAndPassword,
-signInWithEmailAndPassword,
-signOut,
-onAuthStateChanged,
+  auth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
 };

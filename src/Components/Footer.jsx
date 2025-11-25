@@ -73,17 +73,17 @@ const Footer = () => {
 
           <div className="flex items-center gap-3 mb-4">
             <FaEnvelope className="text-red-600" />
-            <span>contact@hexagonservices.com</span>
+            <span>contact@gmail.com</span>
           </div>
 
           <div className="flex items-center gap-3 mb-4">
             <FaPhone className="text-red-600" />
-            <span>+91 8298431275</span>
+            <span>+8801707458796</span>
           </div>
 
           <div className="flex items-center gap-3">
             <FaMapMarkerAlt className="text-red-600" />
-            <span>Lucknow, India</span>
+            <span>Mohammadpur, Dhaka</span>
           </div>
         </div>
       </div>
