@@ -32,8 +32,9 @@ return () => unsub();
 
 return (
 <div>
+  <Toaster position="top-right" reverseOrder={false} />
 <Navbar user={user} onLogout={() => signOut(auth).then(() => navigate('/'))} />
- <Toaster position="top-right" reverseOrder={false} />
+ 
 
 <Routes>
 <Route path="/" element={<Home />} />

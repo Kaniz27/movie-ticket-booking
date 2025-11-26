@@ -1,0 +1,68 @@
+{
+  "rows": [
+    {
+      "row": "N",
+      "seats": [
+        { "id": "N22", "booked": false },
+        { "id": "N21", "booked": false },
+        { "id": "N20", "booked": false },
+        { "id": "N19", "booked": true },
+        { "id": "N18", "booked": true },
+        { "id": "N17", "booked": false },
+        { "id": "N16", "booked": false },
+        { "id": "N15", "booked": false },
+        { "id": "N14", "booked": false },
+        { "id": "N13", "booked": false },
+        { "id": "N12", "booked": false }
+      ]
+    },
+
+    {
+      "row": "M",
+      "seats": [
+        { "id": "M20", "booked": false },
+        { "id": "M19", "booked": false },
+        { "id": "M18", "booked": false },
+        { "id": "M17", "booked": false },
+        { "id": "M16", "booked": false },
+        { "id": "M15", "booked": false },
+        { "id": "M14", "booked": false },
+        { "id": "M13", "booked": false },
+        { "id": "M12", "booked": false },
+        { "id": "M11", "booked": false }
+      ]
+    },
+
+    {
+      "row": "L",
+      "seats": [
+        { "id": "L20", "booked": false },
+        { "id": "L19", "booked": false },
+        { "id": "L18", "booked": false },
+        { "id": "L17", "booked": false },
+        { "id": "L16", "booked": false },
+        { "id": "L15", "booked": false },
+        { "id": "L14", "booked": false },
+        { "id": "L13", "booked": false },
+        { "id": "L12", "booked": false },
+        { "id": "L11", "booked": false }
+      ]
+    },
+
+    {
+      "row": "K",
+      "seats": [
+        { "id": "K20", "booked": false },
+        { "id": "K19", "booked": false },
+        { "id": "K18", "booked": false },
+        { "id": "K17", "booked": false },
+        { "id": "K16", "booked": false },
+        { "id": "K15", "booked": false },
+        { "id": "K14", "booked": false },
+        { "id": "K13", "booked": false },
+        { "id": "K12", "booked": false },
+        { "id": "K11", "booked": false }
+      ]
+    }
+  ]
+}

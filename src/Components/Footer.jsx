@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-300 py-12 border-t-2 border-red-600 relative">
+    <footer className="bg-black text-gray-300 py-12  relative">
 
       {/* Top Red Border Glow */}
       <div className="absolute top-0 left-0 w-full h-1 bg-red-600 shadow-[0_0_20px_#ff0000]"></div>
